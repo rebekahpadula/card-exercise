@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+ }
+ 
+ body {
+    margin: 50px;
+ }
+ 
+ .card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0 0 5px 5px;
+    padding: 24px;
+    max-width: 360px;
+ }
+ 
+ .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+ 
+ }
+ 
+ img {
+    max-width: 100%;
+ /* this is what my image needed to be aligned properly! also wrapping the image and content in the same wrapper */
+ }
+ 
+ h1 {
+    margin: 0;
+ }
+ 
+ p {
+    margin: 0;   
+ }
+ 
+ footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .button {
+    display: inline-block;
+    background-color: #a881af;
+    border: 2px solid #80669d;
+    color: #fff;
+    border-radius: 24px;
+    padding: 8px 12px;
+    transition: background-color ease-in-out .1s;
+    
+ }
+ 
+ .button:hover {
+    background-color: #80669d;
+ }
+ 
+ .button:active {
+    background-color: #66517d;
+    border-color: #66517d;
+ }
+ 
+ .favorite {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+ }
+ 
+ svg:hover {
+    fill: #80669d;
+ }
+ 
+ /* its not the exact hover state with the outline of the heart changing colors 
+ and the box shadow appearing, i couldnt find an svg with rounded corners and couldnt 
+ find a way to work around that unless i write the svg path myself? */
